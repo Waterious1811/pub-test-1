@@ -1,3 +1,7 @@
+###
+PART 1 CODE EXAMPLE
+###
+
 #include <iostream>
 #include <windows.h>
 #include <cstdlib>
@@ -5,20 +9,20 @@ using namespace std;
 int main()
 {
     float a,b,i;
-    cout<<"ÇëÊäÈëÄãÏëË¢ÆÁµÄ±éÊý"<<endl;
+    cout<<"è¯·è¾“å…¥ä½ æƒ³åˆ·å±çš„éæ•°"<<endl;
     cin>>a;
-    system("color 7F"); //µ÷±³¾°ÑÕÉ«£¬×°XÓÃµÄ 
-    cout<<"ÇëÊäÈë¼ä¸ôµÄÃëÊý"<<endl;
+    system("color 7F"); //è°ƒèƒŒæ™¯é¢œè‰²ï¼Œè£…Xç”¨çš„ 
+    cout<<"è¯·è¾“å…¥é—´éš”çš„ç§’æ•°"<<endl;
     cin>>b;
     system("color 9F");
-    b=b*1000;//°ÑºÁÃë×ª»¯³ÉÃë 
-    cout<<"Çë¸´ÖÆÄãÏëË¢ÆÁµÄÄÚÈÝ"<<endl;//Ë¢ÆÁµÄÄÚÈÝ 
-    system("pause");//µÈ´ý¸´ÖÆÍê±Ï 
+    b=b*1000;//æŠŠæ¯«ç§’è½¬åŒ–æˆç§’ 
+    cout<<"è¯·å¤åˆ¶ä½ æƒ³åˆ·å±çš„å†…å®¹"<<endl;//åˆ·å±çš„å†…å®¹ 
+    system("pause");//ç­‰å¾…å¤åˆ¶å®Œæ¯• 
     system("color 6F");
-    cout<<"Çë°ÑÊó±êÒÆ¶¯µ½ÁÄÌì¿ò"<<endl; 
+    cout<<"è¯·æŠŠé¼ æ ‡ç§»åŠ¨åˆ°èŠå¤©æ¡†"<<endl; 
     Sleep(2000);
     system("color");
-    cout<<"Ë¢ÆÁ½«ÔÚ3Ãëºó¿ªÊ¼"<<endl;//¸øÊ±¼ä×öÔ¤±¸ 
+    cout<<"åˆ·å±å°†åœ¨3ç§’åŽå¼€å§‹"<<endl;//ç»™æ—¶é—´åšé¢„å¤‡ 
     Sleep(1000);
     cout<<"3"<<endl;
     system("color 4F");
@@ -28,20 +32,24 @@ int main()
     Sleep(1000);
     cout<<"1"<<endl;
     system("color 0F");
-    mouse_event(MOUSEEVENTF_LEFTDOWN,0,0,0,0);//Êó±ê×ó¼üµãÏÂ 
-    mouse_event(MOUSEEVENTF_LEFTUP,0,0,0,0);//Êó±ê×ó¼üÌ§Æð 
+    mouse_event(MOUSEEVENTF_LEFTDOWN,0,0,0,0);//é¼ æ ‡å·¦é”®ç‚¹ä¸‹ 
+    mouse_event(MOUSEEVENTF_LEFTUP,0,0,0,0);//é¼ æ ‡å·¦é”®æŠ¬èµ· 
     for(i=0;i<a;i++)
     {
-        keybd_event(0x11, 0, 0, 0);//CTRL¼ü°´ÏÂ 
-        keybd_event(0x56, 0, 0, 0); //V¼ü°´ÏÂ 
-        keybd_event(0x56, 0, 2, 0); //V¼üÌ§Æð 
-        keybd_event(0x11, 0, 2, 0);//CTRL¼üÌ§Æð 
-        keybd_event(VK_RETURN,0,0,0);//enter¼ü°´ÏÂ 
-        keybd_event(VK_RETURN,0,2,0);//enter¼üÌ§Æð 
-        Sleep(b);//¼ä¸ôÃëÊý 
+        keybd_event(0x11, 0, 0, 0);//CTRLé”®æŒ‰ä¸‹ 
+        keybd_event(0x56, 0, 0, 0); //Vé”®æŒ‰ä¸‹ 
+        keybd_event(0x56, 0, 2, 0); //Vé”®æŠ¬èµ· 
+        keybd_event(0x11, 0, 2, 0);//CTRLé”®æŠ¬èµ· 
+        keybd_event(VK_RETURN,0,0,0);//enteré”®æŒ‰ä¸‹ 
+        keybd_event(VK_RETURN,0,2,0);//enteré”®æŠ¬èµ· 
+        Sleep(b);//é—´éš”ç§’æ•° 
     }
     system("color 1F");
-    cout<<"Ë¢ÆÁ½áÊø"<<endl;
+    cout<<"åˆ·å±ç»“æŸ"<<endl;
     Sleep(100);
-    return main();//ÖØ¸´Ñ­»· 
+    return main();//é‡å¤å¾ªçŽ¯ 
 }
+
+
+###
+PART 2 
